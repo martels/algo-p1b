@@ -7,7 +7,7 @@
 
 		Mastermind::Mastermind(int l, int r) : secret(l, r){}
 
-		Mastermind::Mastermind() : secret(5, 10){}
+		Mastermind::Mastermind() : secret(5, 9){}
 
 void		Mastermind::printSecret()
 		{

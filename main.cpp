@@ -11,15 +11,13 @@ using namespace std;
 int main()
 {
 	bool result = false;
-	int length = 5 , range = 9;
 	char select2 = 'n';
-	cout << "Please enter length of code: ";
-	cin >> length;
-	cout << "Please enter Range of code: ";
-	cin >> range;
-	Mastermind game(length, range);
-	cout << endl << endl;
+	cout << endl << endl << "!!MASTERMIND!!" << endl << endl;
+	cout << "You are playing a game of mastermind with the computer, the length of the code is 5 and numbers can be any integer from 0-9. The code is random."
+	<< endl << "Your guess' will be tested against the secret code. The number of correct integers in your guess will be displayed on screen" << endl
+	<< "along with the number of integers that are in the wrong place." << endl << endl << endl;
 
+	Mastermind game;
 	result = game.playGame();
 	if(result == true)
 	{

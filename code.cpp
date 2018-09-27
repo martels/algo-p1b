@@ -3,7 +3,7 @@ Project 1
 
 Sam Martel
 martel.s@husky.neu.edu
- 
+
 Barry Yung
 yung.b@husky.neu.edu
 
@@ -146,12 +146,20 @@ int Code::checkIncorrect(const Code &test) const
 //Purpose: Parses user to guess code
 void Code::humanGuess()
 {
-    int x; //placeholder for user parse
-    for(int i = 0; i < leng; i++)
-    {
-        cout << "Please input guess number " << i+1 << endl;
-        cin >> x; //parses user for input number
-        secCode.push_back(x); // adds the user input to the secCode array
-        cout << endl;
-        }
+	int x; //placeholder for user parse
+	for(int i = 0; i < leng; i++)
+	{
+        	cout << "Please input guess number " << i+1 << ": " << endl;
+        	cin >> x; //parses user for input number
+		if(x > leng || x < 0)
+		{
+			cout << "!!!Out of Range!!!" << endl;
+			i--;
+		}
+		else
+		{
+        		secCode.push_back(x); // adds the user input to the secCode array
+        		cout << endl;
+		}
+	}
 }
