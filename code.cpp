@@ -151,7 +151,7 @@ void Code::humanGuess()
 	{
         	cout << "Please input guess number " << i+1 << ": " << endl;
         	cin >> x; //parses user for input number
-		if(x > leng || x < 0)
+		if(x > rang || x < 0)
 		{
 			cout << "!!!Out of Range!!!" << endl;
 			i--;
