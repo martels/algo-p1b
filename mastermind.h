@@ -1,3 +1,14 @@
+/*
+Authors:
+Sam Martel
+martel.s@husky.neu.edu
+
+Barry Yung
+yung.b@husky.neu.edu
+
+mastermind class definition
+*/
+
 #ifndef MASTERMIND_H
 #define MASTERMIND_H
 #include <iostream>
