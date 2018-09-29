@@ -36,6 +36,8 @@ int main()
 
 	///play the game and determine who wins
 	result = game.playGame();
+	cout << endl;
+	game.printSecret();
 	if(result == true)
 	{
 		cout << "Congratulations, you won" << endl;

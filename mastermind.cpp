@@ -68,7 +68,7 @@ bool		Mastermind::playGame()
 			///randomises the code 
 			secret.randomCode();
 			///prints the secret for debugging
-			printSecret();
+//			printSecret();
 			///runs the game while the code is not solved or the count has not run out
 			while(check == false && count >= 0)
 			{
